@@ -1,0 +1,78 @@
+.container {
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  background-color: #622E0F;
+  position: relative; }
+
+.body-back {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  height: 80px;
+  width: 165px;
+  background-color: #ef8533;
+  border-radius: 0 200px 0 0; }
+
+.neck-lower {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  height: 80px;
+  width: 80px;
+  background-color: #ffffff;
+  border-radius: 0 0 0 80px; }
+
+.leg-front-left {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  height: 65px;
+  width: 40px;
+  background-color: #ef8533;
+  border-radius: 0 0 100px 0; }
+
+.toe-front-left {
+  position: absolute;
+  top: 245px;
+  left: 120px;
+  height: 20px;
+  width: 30px;
+  background-color: #ef8533;
+  border-radius: 40px 0 0 40px; }
+
+.leg-front-right {
+  position: absolute;
+  top: 160px;
+  left: 50px;
+  height: 40px;
+  width: 100px;
+  background-color: #CE612B;
+  border-radius: 40px 0 0 0; }
+
+.toe-front-right {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  height: 30px;
+  width: 20px;
+  background-color: #CE612B;
+  border-radius: 0 0 20px 20px; }
+
+.leg-back-right {
+  position: absolute;
+  top: 200px;
+  left: 230px;
+  height: 65px;
+  width: 40px;
+  background-color: #CE612B;
+  border-radius: 0 0 100px 0; }
+
+.toe-back-right {
+  position: absolute;
+  top: 245px;
+  left: 200px;
+  height: 20px;
+  width: 30px;
+  background-color: #CE612B;
+  border-radius: 40px 0 0 40px; }
