@@ -1,0 +1,17 @@
+{
+  "name": "fox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o public/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
