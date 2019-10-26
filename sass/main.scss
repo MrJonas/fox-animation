@@ -3,12 +3,20 @@ $fox-color: #ef8533;
 $fox-shadow-color: #CE612B;
 $fox-white: #ffffff;
 
+body, html {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color:$background; 
+}
+
 .container {
-  height: 500px;
-  width: 500px;
-  margin: 0;
+  margin: auto;
+  height: 300px;
+  width: 400px;
   background-color:$background;
   position: relative;
+  margin-top: 100px;
 }
 
 .body-back {
@@ -41,6 +49,48 @@ $fox-white: #ffffff;
   width: 80px;
   background-color: $fox-white;
   border-radius: 0 0 0 80px;
+}
+
+.neck-upper {
+    position: absolute;
+    top: 80px;
+    left: 70px; 
+    height: 40px;
+    width: 130px;
+    background-color: $fox-white;
+    border-radius: 100px 140px 0 0 / 80px 30px 0 0;
+}
+
+.neck-crop {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 40px 50px;
+    border-color: transparent transparent $background transparent;
+}
+
+.head-front {
+    position: absolute;
+    top: 39px;
+    left: 106px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 0 88px;
+    border-color: transparent transparent transparent $fox-color;
+}
+
+.head-back {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    width: 40px;
+    height: 80px;
+    border-radius: 200px 0 0 0 / 350px 0 0 0;
+    background-color: $fox-color;
 }
 
 
@@ -124,6 +174,31 @@ $fox-white: #ffffff;
     border-radius:  0 80px 40px 40px;
 }
 
+.ear-right {
+    position: absolute;
+    top: 22px;
+    left: 106px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 30px 15px;
+    border-color: transparent transparent $fox-color transparent;
+    transform: rotate(30deg);
+    animation: ear 6s linear infinite;
+}
+
+.ear-left {
+    position: absolute;
+    top: 30px;
+    left: 124px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 30px 15px;
+    transform: rotate(33deg);
+    border-color: transparent transparent $fox-shadow-color transparent;
+}
+
 .tail {
     position: absolute;
     top: 20px;
@@ -131,5 +206,60 @@ $fox-white: #ffffff;
     height: 180px;
     width: 80px;
     background-color: $fox-color;
-    border-radius:  120px 0 120px 0; 
+    border-radius:  120px 0 120px 0 / 120px 0 120px 0;
+    animation: wag 6s linear infinite;
 }
+
+@keyframes wag {
+    0% {
+        border-radius: 120px 0 120px 0;
+    }
+    44% {
+        border-radius: 120px 0 120px 0;
+    }
+    45% {
+        border-radius: 0px 120px 120px 0;
+    }
+    50% {
+        border-radius: 0px 120px 120px 0;
+    }
+    51% {
+      border-radius: 120px 0 120px 0;
+    }
+    100% {
+        border-radius: 120px 0 120px 0;
+    }
+  }
+
+  @keyframes ear {
+    0% {
+        top: 22px;
+        left: 106px;
+        transform: rotate(30deg);
+    }
+    29% {
+        top: 22px;
+        left: 106px;
+        transform: rotate(30deg);
+    }
+    30% {
+        top: 26px;
+        left: 114px;
+        transform: rotate(50deg);
+    }
+    58% {
+        top: 26px;
+        left: 114px;
+        transform: rotate(50deg);
+    }
+    59% {
+        top: 22px;
+        left: 106px;
+        transform: rotate(30deg);
+    }
+    100% {
+        top: 22px;
+        left: 106px;
+        transform: rotate(30deg);
+    }
+  }
