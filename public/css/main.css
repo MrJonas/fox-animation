@@ -10,9 +10,19 @@
   top: 120px;
   left: 150px;
   height: 80px;
-  width: 165px;
+  width: 130px;
   background-color: #ef8533;
   border-radius: 0 200px 0 0; }
+
+.body-butt {
+  position: absolute;
+  top: 130px;
+  left: 230px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70px 0 0 70px;
+  border-color: transparent transparent transparent #ef8533; }
 
 .neck-lower {
   position: absolute;
@@ -76,3 +86,30 @@
   width: 30px;
   background-color: #CE612B;
   border-radius: 40px 0 0 40px; }
+
+.leg-back-left {
+  position: absolute;
+  top: 200px;
+  left: 240px;
+  height: 40px;
+  width: 60px;
+  background-color: #ef8533;
+  border-radius: 0 0 0 40px; }
+
+.toe-back-left {
+  position: absolute;
+  top: 195px;
+  left: 290px;
+  height: 70px;
+  width: 20px;
+  background-color: #ef8533;
+  border-radius: 0 80px 40px 40px; }
+
+.tail {
+  position: absolute;
+  top: 20px;
+  left: 270px;
+  height: 180px;
+  width: 80px;
+  background-color: #ef8533;
+  border-radius: 120px 0 120px 0; }
